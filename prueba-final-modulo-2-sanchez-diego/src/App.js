@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import { Button , AppBar , Typography , Toolbar } from '@material-ui/core';
 
 import './App.css';
@@ -11,7 +10,7 @@ function App() {
         <Typography variant="h6">
           
         </Typography>
-        <Button>Share</Button>
+        <Button variant="outlined" color="secundary">Share</Button>
       </Toolbar>
     </AppBar>
   );
