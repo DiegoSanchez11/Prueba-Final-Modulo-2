@@ -1,6 +1,6 @@
 // icon-h1-img
-import React from "react";
-import { AppBar, Typography, Avatar, Grid } from "@material-ui/core";
+import React from 'react';
+import { AppBar, Typography, Avatar, Grid } from '@material-ui/core';
 
 //Css
 import "../styles/Header.css";
