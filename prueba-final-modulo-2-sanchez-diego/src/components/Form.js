@@ -5,8 +5,8 @@ class Form extends React.Component{
     render(){
         return(
             <div>
-                <TextField variant="outlined" value="Correo Electronico"/>
-                <TextField variant="outlined" value="Contraseña" />
+                <TextField variant="outlined" placeholder="Correo Electronico"/>
+                <TextField variant="outlined" placeholder="Contraseña" />
             </div>
         )
     }

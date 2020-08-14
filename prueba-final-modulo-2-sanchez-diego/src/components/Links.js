@@ -10,6 +10,7 @@ class Links extends React.Component{
                     <Link href="#" onClick="" color="inherit">
                         ¿Has ovlidado la contraseña?
                     </Link>
+                    <div className="links_line"></div>
                     <Link href="#" onClick="" varitant="inherit">
                         ¿NO TIENES CUENTA?
                     </Link>
