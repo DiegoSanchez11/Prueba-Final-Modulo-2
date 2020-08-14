@@ -1,11 +1,14 @@
 // Este sera mi Home-Login
 import React from 'react';
-import CardLogin from '../components/CardLogin';
+// Components
+import Form from '../components/Form';
+import NavBar from '../components/NavBar';
 
 class HomeLogin extends React.Component{
     render(){
         return(
-            <CardLogin />
+            <NavBar />
+            <Form />
         )
     }
 }
