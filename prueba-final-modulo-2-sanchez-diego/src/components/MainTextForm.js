@@ -6,8 +6,13 @@ import '../styles/MainTextForm.css';
 
 export const MainTextForm = () => {
     return(
-        <div>
-            <div className="text__icon"></div>
-            <h1>Ingresar</h1>
+        <div className="main__title-container">
+            <div>
+                <div className="text__icon"></div>
+            </div>
+            <h1 className="main__title-text">Ingresar</h1>
         </div>
+    )    
 }
+
+export default MainTextForm;
