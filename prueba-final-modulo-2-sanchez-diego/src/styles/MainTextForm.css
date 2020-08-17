@@ -12,5 +12,7 @@
     background-color: #e91e63;
 }
 .main__title-text{
+    margin-top: 10px;
+    font-weight: normal;
     font-size: 32px;
 }
