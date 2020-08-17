@@ -7,7 +7,7 @@ import Links from './Links';
 class Form extends React.Component{
     render(){
         return(
-            <div>
+            <div className="form__box">
                 <Paper>
                     <TextField variant="outlined" placeholder="Correo Electronico"/>
                     <TextField variant="outlined" placeholder="Contraseña"/>
