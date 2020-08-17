@@ -1,4 +1,3 @@
-.appBar__box{
-    display: flex;
+.AppBar__toolbar{
     justify-content: center;
 }

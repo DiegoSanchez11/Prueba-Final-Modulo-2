@@ -1,7 +1,7 @@
 // icon-h1-img
 import React from 'react';
 import { AppBar, Box, Toolbar} from '@material-ui/core';
-import Logo from '../Icons/Logo-Mateify.png';
+import Logo from '../Icons/Mateify-Logo.png';
 
 //Css
 import "../styles/NavBar.css";
@@ -14,7 +14,7 @@ class NavBar extends React.Component {
                 <Box>
                     <AppBar position="static">
                         <Toolbar className="AppBar__toolbar">
-                            <Logo />
+                            <img alt="logo" />
                             <h2 className="AppBar__title">Mateify</h2>
                         </Toolbar>
                     </AppBar>
