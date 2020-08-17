@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+// Css
 import './index.css';
-import CardLogin from './components/CardLogin';
+// Pages
+import HomeLogin from './pages/HomeLogin';
+
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <CardLogin />
+    <HomeLogin />
   </React.StrictMode>,
   document.getElementById('root')
 );

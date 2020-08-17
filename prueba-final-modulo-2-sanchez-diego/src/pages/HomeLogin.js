@@ -7,8 +7,10 @@ import NavBar from '../components/NavBar';
 class HomeLogin extends React.Component{
     render(){
         return(
-            <NavBar />
-            <Form />
+            <div>
+                <NavBar />
+                <Form />
+            </div>
         )
     }
 }

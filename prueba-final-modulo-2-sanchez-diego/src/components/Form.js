@@ -1,7 +1,7 @@
 import React from 'react';
 import { TextField, Paper } from '@material-ui/core';
 // Components
-import Button from './Button';
+import Boton from './Boton';
 import Links from './Links';
 
 class Form extends React.Component{
@@ -10,10 +10,10 @@ class Form extends React.Component{
             <div>
                 <Paper>
                     <TextField variant="outlined" placeholder="Correo Electronico"/>
-                    <TextField variant="outlined" placeholder="Contraseña" />
-                    <Button button_variant="contained" button_color="secondary" button_name="COMENZAR A CREAR PLAYLIST"/>
+                    <TextField variant="outlined" placeholder="Contraseña"/>
+                    <Boton button_variant="contained" button_color="secondary" button_name="COMENZAR A CREAR PLAYLIST" />
                     <Links />
-                    <Button button_variant="outlined" button_color="default" button_name="REGISTRATE" />
+                    <Boton button_variant="outlined" button_color="default" button_name="REGISTRATE"/>
                 </Paper>
             </div>
         )
