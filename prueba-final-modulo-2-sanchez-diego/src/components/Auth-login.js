@@ -2,8 +2,7 @@ import React from 'react';
 import {  } from '@material-ui/core';
 
 // Components
-/*
--NavBar
--Container-Auth
-*/
+import NavBar from '../components/NavBar';
+import ContainerAuth from '../components/ContainerAuth';
+
 // Css
