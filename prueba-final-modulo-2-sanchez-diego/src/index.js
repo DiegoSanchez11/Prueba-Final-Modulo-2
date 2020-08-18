@@ -12,6 +12,9 @@ import './index.css';
 // Pages
 import HomeLogin from './pages/HomeLogin';
 
+// Provando
+import ContainerAuth from './components/ContainerAuth';
+
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
@@ -22,7 +25,7 @@ ReactDOM.render(
           esta es la playlist
         </Route>
         <Route path="/">
-          <HomeLogin />
+          <ContainerAuth />
         </Route>
       </Switch>
     </Router>
