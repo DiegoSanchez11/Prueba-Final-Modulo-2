@@ -6,7 +6,7 @@ import '../styles/ContainerAuth.css';
 
 export const ContainerAuth = () => {
     return(
-        <Paper>
+        <Paper className>
             <div>
                 <div className="box__father">
                     <div className="auth__container-box"></div>

@@ -18,8 +18,12 @@ p{
     display: flex;
     justify-content: center;
 }
-.auth__container-box{
-    display: flex;
+.auth__container-box::before{
+    curent:url('/src/Icons/image1.png')
+}
+
+/* 
+display: flex;
     justify-content: center;
     align-items: center;
     width: 50px;
@@ -27,4 +31,4 @@ p{
     border-radius: 50%;
     background-color: #e91e63;
     margin-top: 30px;
-}
+*/
