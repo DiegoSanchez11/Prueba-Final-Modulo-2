@@ -11,6 +11,7 @@ import {
 import './index.css';
 // Pages
 import HomeLogin from './pages/HomeLogin';
+import Playlist from './pages/Playlist';
 
 // Provando
 import ContainerAuth from './components/ContainerAuth';
@@ -22,7 +23,7 @@ ReactDOM.render(
     <Router>
       <Switch>
         <Route path="/playlist">
-          esta es la playlist
+          <Playlist />
         </Route>
         <Route path="/">
           <ContainerAuth />
