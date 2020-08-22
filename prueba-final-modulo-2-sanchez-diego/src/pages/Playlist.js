@@ -9,7 +9,7 @@ import TablePlaylist from '../components/TablePlaylist';
 
 export const Playlist = () => {
     return(
-        <TablePlaylist />
+        <TablePlaylist title="Recomendado" primero="Nombre" segundo="Album" tercerp="Artista" cuarto="Duracion" />
     )
 }
 
