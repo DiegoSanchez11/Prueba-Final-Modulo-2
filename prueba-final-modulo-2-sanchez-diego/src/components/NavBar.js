@@ -14,7 +14,7 @@ class NavBar extends React.Component {
                 <Box>
                     <AppBar position="static">
                         <Toolbar className="AppBar__toolbar">
-                            <img alt="logo" />
+                            <img alt="logo" className="logo" />
                             <h2 className="AppBar__title">Mateify</h2>
                         </Toolbar>
                     </AppBar>

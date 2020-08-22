@@ -28,11 +28,11 @@ export const TablePlaylist = () => {
           </TableRow>
         </TableHead>
         <TableBody>
-          <TableRow key={songs.uuid}>
-            <TableCell>{songs.name}</TableCell>
-            <TableCell>{songs.artist}</TableCell>
-            <TableCell>{songs.album}</TableCell>
-            <TableCell>{songs.duration}</TableCell>
+          <TableRow key={Songs.uuid}>
+            <TableCell>{Songs.name}</TableCell>
+            <TableCell>{Songs.artist}</TableCell>
+            <TableCell>{Songs.album}</TableCell>
+            <TableCell>{Songs.duration}</TableCell>
             <TableCell>
               <Button variant="contained" color="secondary" value="Add" />
             </TableCell>

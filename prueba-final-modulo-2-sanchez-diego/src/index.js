@@ -26,7 +26,7 @@ ReactDOM.render(
           <Playlist />
         </Route>
         <Route path="/">
-          <ContainerAuth />
+          <HomeLogin />
         </Route>
       </Switch>
     </Router>

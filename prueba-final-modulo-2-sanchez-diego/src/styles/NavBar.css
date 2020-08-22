@@ -1,3 +1,6 @@
 .AppBar__toolbar{
     justify-content: center;
 }
+.logo {
+    content: url('../Icons/Mateify-Logo.png');
+}
