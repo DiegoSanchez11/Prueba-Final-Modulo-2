@@ -10,9 +10,8 @@ import {
   Button,
 } from "@material-ui/core";
 
-const songs = () => {
-  "ruta del archivo de los arrays de songs";
-};
+import Songs from '../baseDeDatos/songData.json';
+
 
 export const TablePlaylist = () => {
   return (
