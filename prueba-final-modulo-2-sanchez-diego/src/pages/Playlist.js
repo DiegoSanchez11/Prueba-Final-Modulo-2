@@ -8,6 +8,7 @@ import NavBar from '../components/NavBar';
 import PlaylistInput from "../components/PlaylistInput";
 import TablePlaylist from "../components/TablePlaylist";
 import TablePlaylistCreated from '../components/TablePlaylistCreated';
+import ProyectPlaylist from '../components/proyectPlaylist';
 
 export const Playlist = () => {
   return (
@@ -15,15 +16,9 @@ export const Playlist = () => {
       <div>
           <NavBar />
       </div>
-      <div>
-        <center><PlaylistInput /></center>
-      </div>
-      <div>
-        <TablePlaylist />
-      </div>
       <br/>
       <div>
-        <TablePlaylistCreated />
+        <ProyectPlaylist/>
       </div>
     </div>
   );

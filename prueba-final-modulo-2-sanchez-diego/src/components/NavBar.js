@@ -1,7 +1,6 @@
 // icon-h1-img
 import React from 'react';
 import { AppBar, Box, Toolbar} from '@material-ui/core';
-import Logo from '../Icons/Mateify-Logo.png';
 
 //Css
 import "../styles/NavBar.css";

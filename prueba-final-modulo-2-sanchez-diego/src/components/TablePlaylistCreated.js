@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Table,
   TableBody,
@@ -10,7 +10,11 @@ import {
   Button,
 } from "@material-ui/core";
 
-import Songs from '../baseDeDatos/songData.json';
+import Fab from "@material-ui/core/Fab";
+import AddIcon from "@material-ui/icons/Add";
+
+import song from "../baseDeDatos/songData.json";
+import PlaylistInput from "./PlaylistInput";
 
 
 export const TablePlaylistCreated = () => {
@@ -28,15 +32,18 @@ export const TablePlaylistCreated = () => {
           </TableRow>
         </TableHead>
         <TableBody>
-          <TableRow key={Songs.uuid}>
-            <TableCell>{Songs.name}</TableCell>
-            <TableCell>{Songs.artist}</TableCell>
-            <TableCell>{Songs.album}</TableCell>
-            <TableCell>{Songs.duration}</TableCell>
+          <TableRow key={song.uuid}>
+            <TableCell>{song.name}</TableCell>
+            <TableCell>{song.artist}</TableCell>
+            <TableCell>{song.album}</TableCell>
+            <TableCell>{song.duration}</TableCell>
             <TableCell>
-              <Button variant="contained" color="secondary" name="DisLike" />
-              <Button variant="contained" color="primary" name="Like" />
-            </TableCell>
+            <Fab size="small" color="default" aria-label="add">
+                <AddIcon />
+              </Fab>              
+              <Fab size="small" color="default" aria-label="add">
+                <AddIcon />
+              </Fab>            </TableCell>
           </TableRow>
         </TableBody>
       </Table>

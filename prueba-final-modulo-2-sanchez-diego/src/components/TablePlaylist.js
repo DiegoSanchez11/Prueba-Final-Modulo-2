@@ -10,8 +10,10 @@ import {
   Button,
 } from "@material-ui/core";
 
-import Songs from '../baseDeDatos/songData.json';
+import Fab from '@material-ui/core/Fab';
+import AddIcon from '@material-ui/icons/Add';
 
+import Songs from "../baseDeDatos/songData.json";
 
 export const TablePlaylist = () => {
   return (
@@ -34,7 +36,9 @@ export const TablePlaylist = () => {
             <TableCell>{Songs.album}</TableCell>
             <TableCell>{Songs.duration}</TableCell>
             <TableCell>
-              <Button variant="contained" color="secondary" value="Add" />
+              <Fab size="small" color="secondary" aria-label="add">
+                <AddIcon />
+              </Fab>
             </TableCell>
           </TableRow>
         </TableBody>

@@ -3,7 +3,7 @@ import React from "react";
 const PlaylistInput = (props) => {
   return (
     <input
-      onChange={props.handleInputChange}
+      onChange={props.onChange}
       placeholder="Buscar"
       onKeyPress={props.handleInputKeyPress}
       value={props.inputValue}
