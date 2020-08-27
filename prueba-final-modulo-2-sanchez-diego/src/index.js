@@ -7,14 +7,21 @@ import {
   Route,
   Link
 } from "react-router-dom";
+
+
 // Css
 import './index.css';
+
+
 // Pages
 import HomeLogin from './pages/HomeLogin';
 import Playlist from './pages/Playlist';
+import AuthLogin from './components/AuthLogin';
+
 
 // Provando
 import ContainerAuth from './components/ContainerAuth';
+
 
 import * as serviceWorker from './serviceWorker';
 
@@ -22,6 +29,9 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Switch>
+      <Route path="/authlogin">
+          <AuthLogin />
+        </Route>
         <Route path="/playlist">
           <Playlist />
         </Route>

@@ -10,16 +10,21 @@ import TablePlaylist from "../components/TablePlaylist";
 import TablePlaylistCreated from '../components/TablePlaylistCreated';
 import ProyectPlaylist from '../components/proyectPlaylist';
 
+
 export const Playlist = () => {
   return (
-    <div>
+    <div className="playlist__box">
       <div>
           <NavBar />
       </div>
-      <br/>
-      <div>
-        <ProyectPlaylist/>
+      <div className="playlist__component">
+          <ProyectPlaylist />
       </div>
+      <br/>
+      <div className="playlist__component">
+          <TablePlaylistCreated />
+      </div>
+      <br/>
     </div>
   );
 };
