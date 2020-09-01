@@ -1,0 +1,10 @@
+.tableOne__input{
+    display: flex;
+    justify-content: center;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.tableOne__table{
+    width: 100% vh;
+}
