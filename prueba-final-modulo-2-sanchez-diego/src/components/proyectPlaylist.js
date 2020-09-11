@@ -39,6 +39,7 @@ const PrpyectPlaylist = () => {
   //Estados
   const [inputValue, setInputValue] = useState("");
   const [listaFiltrada, setListaFiltrada] = useState([]);
+  const [playlist, setPlayList] = useState('');
 
   const handleInputChange = (e) => {
     console.log("Se ejecuta handleInputChange y actualiza el inputValue");
@@ -51,6 +52,25 @@ const PrpyectPlaylist = () => {
     console.log(inputValue);
     console.log("Canción: ");
     console.log(cancion);
+
+    const filtrarCancionesUuid = (cancion, uuid) => {
+      if (cancion.uuid == uuid) {
+        return true;
+      } else {
+        return false;
+      }
+    };
+
+    const handleAddSong = (e, uuid) => {
+          setPlayList(
+            [...listaFiltrada].concat(
+              cancion
+                .filter((cancion) => filtrarCancionesUuid(cancion, uuid))
+                .map((cancion) => ({ ...cancion, count: 0 }))
+            )
+          );
+    };
+    
 
     // Aca filtro las canciones que coinciden con la busqueda
     if (cancion.name.includes(inputValue)) {
@@ -121,7 +141,11 @@ const PrpyectPlaylist = () => {
                     <TableCell align="center">
                       {" "}
                       <Fab size="small" color="secondary">
-                        <AddIcon onClick=""/>
+                        <AddIcon 
+                          onClick={(resultados) => {
+                          handleAddSong(resultados.uuid);
+                          }}
+                          />
                       </Fab>
                     </TableCell>
                   </TableRow>
@@ -129,6 +153,41 @@ const PrpyectPlaylist = () => {
               }
             </TableBody>
           </Table>
+        </TableContainer>
+      </div>
+      <div>
+        <TableContainer component={Paper}>
+        <Table className="" aria-label="simple table">
+          <TableHead>
+            <TableCell>Tu Playlist</TableCell>
+            <TableRow>
+              <TableCell>Nombre</TableCell>
+              <TableCell>Artista</TableCell>
+              <TableCell>Duracion</TableCell>
+              <TableCell>Cant. Votos</TableCell>
+              <TableCell>Votar</TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+          {
+          playlist.map((resultados)=>(
+            <TableRow key={resultados.uuid}>
+              <TableCell>{resultados.name}</TableCell>
+              <TableCell>{resultados.artist}</TableCell>
+              <TableCell>{resultados.duration}</TableCell>
+              <TableCell>
+              <Fab size="small" color="default" aria-label="add">
+                  <AddIcon />
+                </Fab>              
+                <Fab size="small" color="default" aria-label="add">
+                  <AddIcon />
+                </Fab>            
+                </TableCell>
+            </TableRow>
+          ))
+          }
+          </TableBody>
+        </Table>
         </TableContainer>
       </div>
     </div>
